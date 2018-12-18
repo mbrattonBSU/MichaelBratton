@@ -1,0 +1,18 @@
+<GameInfo>
+    <CharacterBattleInfo>
+        <chara name="Prota" maxHP="30" attack="7" defense="5" enAttack="2" enDefense="5" agility="7" tpCost="3"/>
+        <chara name="Roxy" maxHP="20" attack="5" defense="7" enAttack="6" enDefense="9" agility="12" tpCost="2" />
+        <chara name="Smitty" maxHP="45" attack="12" defense="10" enAttack="1" enDefense="4" agility="5" tpCost="5" />
+    </CharacterBattleInfo>
+
+    <CharacterBattleStrings>
+                <ProtaBattleString string="You fire a quick shot at the enemy. It grazes them."/>
+                <ProtaBattleString string="You take a second to aim at the enemy. You fire. The shot connects."/>
+                <RoxyBattleString string="Roxy springs forward, kicks the enemy in the gut, and bounces back."/>
+                <RoxyBattleString string="Roxy bounces high into the air. Her metal heels come crashing down on the enemy's head."/>
+                <SmittyBattleString string="Smitty quickly sweeps under the enemy with his hammer. They trip and fall."/>
+                <SmittyBattleString string="Smitty clips the ground with his hammer, flinging a heavy field of rubble at the enemy."/>
+    </CharacterBattleStrings>
+
+
+</GameInfo>

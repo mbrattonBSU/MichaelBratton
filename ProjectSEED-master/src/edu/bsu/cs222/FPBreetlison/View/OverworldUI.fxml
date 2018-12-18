@@ -1,0 +1,99 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ScrollPane?>
+<StackPane fx:controller="edu.bsu.cs222.FPBreetlison.Controller.OverworldController" xmlns:fx="http://javafx.com/fxml" stylesheets="/stylesheets/customClasses.css" alignment="center">
+
+    <StackPane fx:id="descriptionBox" StackPane.alignment="BOTTOM_CENTER" maxHeight="150" maxWidth="900"  styleClass="description-box">
+        <Label fx:id="roomDescription" StackPane.alignment="CENTER" styleClass="description-text" wrapText="true" maxWidth="800" textAlignment="CENTER"/>
+    </StackPane>
+    <ImageView fx:id="sideBarGraphic" StackPane.alignment="TOP_LEFT" fitWidth="85" fitHeight="400" translateX="-10" translateY="-10"/>
+    <VBox fx:id="sideBar" StackPane.alignment="TOP_LEFT" spacing="20">
+        <ImageView fx:id="partyButton"   fitHeight="50" fitWidth="50" translateX="6" translateY="4"/>
+        <ImageView fx:id="travelButton"  fitHeight="50" fitWidth="50" translateX="6"/>
+        <ImageView fx:id="saveLoadButton"  fitHeight="50" fitWidth="50" translateX="6"/>
+        <ImageView fx:id="inspectButton" fitHeight="50" fitWidth="50" translateX="6"/>
+
+
+    </VBox>
+    <StackPane fx:id="navBanner" maxWidth="400" maxHeight="80" StackPane.alignment="TOP_LEFT" translateX="900" translateY="20">
+        <ImageView fx:id="bannerGraphic" fitWidth="400" fitHeight="100"/>
+        <Label fx:id="bannerDisplay" translateX="20" styleClass="banner-text"/>
+
+    </StackPane>
+    <StackPane fx:id="travelPane" StackPane.alignment="TOP_LEFT"  maxHeight="150" maxWidth="150" translateX="70" visible="false" styleClass="map">
+        <Button fx:id="closeTravelButton" StackPane.alignment="BOTTOM_RIGHT" text="   X   " translateX="-5" translateY="-5" onAction="#closeTravel"/>
+        <Button fx:id="north" StackPane.alignment="TOP_CENTER"  translateY="20" text="N" onAction="#travelNorth"/>
+        <Button fx:id="south" StackPane.alignment="BOTTOM_CENTER"  translateY="-20" text="S"  onAction="#travelSouth"/>
+        <Button fx:id="east" StackPane.alignment="CENTER_RIGHT" translateX="-20" text="E"  onAction="#travelEast"/>
+        <Button fx:id="west" StackPane.alignment= "CENTER_LEFT" translateX="20"  text="W"  onAction="#travelWest"/>
+    </StackPane>
+    <HBox fx:id="backgroundImage" StackPane.alignment="TOP_CENTER"/>
+    <StackPane fx:id="partyMenu" StackPane.alignment="CENTER" visible="false" styleClass="party-box" scaleX=".5" scaleY=".5">
+    </StackPane>
+    <StackPane fx:id="loadSaveMenu" StackPane.alignment="CENTER" visible="false" maxWidth="150" maxHeight="175" translateY="-60" styleClass="save-box">
+        <Label fx:id="save" text="Save" StackPane.alignment="TOP_CENTER" translateY="30" onMousePressed="#saveGame" styleClass="menu-text"/>
+        <Label fx:id="load" text="Load" StackPane.alignment="TOP_CENTER" translateY="100" onMousePressed="#loadGame" styleClass="menu-text"/>
+        <Button fx:id="exitLoadSaveMenu" text="X" StackPane.alignment="TOP_LEFT"   onAction="#hideLoadSaveMenu"/>
+    </StackPane>
+    <StackPane fx:id="inspectMenu" StackPane.alignment="TOP_CENTER" visible="false" translateY="50" translateX="-200" maxHeight="300" maxWidth="300">
+        <ScrollPane fx:id="eventScroller" vbarPolicy="never" hbarPolicy="never" StackPane.alignment="TOP_CENTER" maxWidth="100" stylesheets="/stylesheets/eventsPanel.css">
+            <VBox fx:id="events">
+
+            </VBox>
+        </ScrollPane>
+        <Button text="X" onAction="#hideInspectMenu" StackPane.alignment="TOP_LEFT"/>
+
+    </StackPane>
+    <StackPane fx:id="shopMenu" maxHeight="400" maxWidth="400" visible="false" StackPane.alignment="CENTER" styleClass="menu-box">
+        <Button fx:id="hideShop" text="X" onAction="#hideShop" StackPane.alignment="TOP_RIGHT"/>
+        <ScrollPane fx:id="itemAreaScroller" StackPane.alignment="CENTER_LEFT" styleClass="edge-to-edge" maxWidth="130">
+            <VBox fx:id="shopItemsArea" spacing="20"/>
+        </ScrollPane>
+        <ImageView fx:id="shopItemDisplay" visible="false" StackPane.alignment="CENTER" translateX="50" fitHeight="200" fitWidth="200"/>
+        <Label fx:id="shopNameDisplay" visible="false" StackPane.alignment="CENTER" translateX="50" translateY="-150" styleClass="description-text"/>
+        <Label fx:id="costDisplay" visible="false" StackPane.alignment="CENTER" translateX="50" translateY="-110" styleClass="description-text"/>
+        <Label fx:id="buy" visible="false" text="Buy" StackPane.alignment="BOTTOM_CENTER" translateY="-40" translateX="50" styleClass="banner-text"/>
+        <Label fx:id="shopName" visible="true" StackPane.alignment="TOP_CENTER" translateY="10" translateX="10" styleClass="description-text"/>
+
+
+    </StackPane>
+    <StackPane fx:id="teamMenu" maxHeight="400" maxWidth="700" visible="false" StackPane.alignment="CENTER" styleClass="menu-box">
+      <VBox fx:id="teamArea" StackPane.alignment="CENTER_LEFT" maxWidth="200" maxHeight="300" translateX="40" styleClass="white-box"/>
+        <ScrollPane fx:id="standbyScroller" StackPane.alignment="CENTER_RIGHT" maxWidth="200" maxHeight="300" translateX="-40">
+            <VBox fx:id="standbyArea"/>
+        </ScrollPane>
+        <Label fx:id="characterName" StackPane.alignment="TOP_CENTER" translateY="20" styleClass="description-text"/>
+        <Label fx:id="characterLevel" StackPane.alignment="TOP_CENTER" translateY="40" styleClass="description-text"/>
+        <Label fx:id="characterHP" StackPane.alignment="TOP_CENTER" translateY="60" styleClass="description-text"/>
+        <Label fx:id="characterAtk" StackPane.alignment="TOP_CENTER" translateY="80" styleClass="description-text"/>
+        <Label fx:id="characterDef" StackPane.alignment="TOP_CENTER" translateY="100" styleClass="description-text"/>
+        <Label fx:id="characterAgility" StackPane.alignment="TOP_CENTER" translateY="120" styleClass="description-text"/>
+        <Label fx:id="transferButton" text="transfer" StackPane.alignment="CENTER" translateY="150" styleClass="banner-text" scaleX=".8" scaleY=".8" onMousePressed="#handleTransfer"/>
+        <Button fx:id="exitButton" text="X" StackPane.alignment="TOP_LEFT" onAction="#hideTeamMenu"/>
+        <Button fx:id="openItemsButton" text="Items" StackPane.alignment="TOP_RIGHT" onAction="#openItemsMenu"/>
+        <Button fx:id="closeItemsButton" text="Items" StackPane.alignment="TOP_RIGHT" onAction="#closeItemsMenu" visible="false"/>
+        <StackPane fx:id="itemsMenu" maxHeight="300" maxWidth="200" visible="false" StackPane.alignment="CENTER" styleClass="menu-box">
+            <ScrollPane fx:id="inventoryAreaScroller" StackPane.alignment="CENTER_LEFT" styleClass="edge-to-edge" maxWidth="30">
+                <VBox fx:id="inventoryItemsArea" spacing="20"/>
+            </ScrollPane>
+            <ImageView fx:id="inventoryItemDisplay" visible="false" StackPane.alignment="TOP_CENTER" translateX="10" translateY="0" fitHeight="100" fitWidth="100"/>
+            <Label fx:id="inventoryNameDisplay" visible="false" StackPane.alignment="TOP_CENTER" translateX="0" translateY="110" styleClass="description-text"/>
+            <Label fx:id="inventoryQuickSummaryDisplay" visible="false" StackPane.alignment="TOP_RIGHT" maxWidth="150" translateX="0" translateY="150" styleClass="description-text"/>
+            <Label fx:id="use" visible="true" text="Use Item" StackPane.alignment="BOTTOM_CENTER" translateY="0" translateX="25" styleClass="banner-text"/>
+        </StackPane>
+
+        <ScrollPane fx:id="itesmsMenu" StackPane.alignment="CENTER" maxWidth="200" maxHeight="300" visible="false" opacity="1">
+            <VBox fx:id="inventoryItemdsArea" StackPane.alignment="TOP_CENTER">
+            </VBox>
+            <ImageView fx:id="itemDisplay" visible="true" StackPane.alignment="CENTER"  translateX="0" fitHeight="0" fitWidth="200"/>
+            <Label fx:id="nameDisplay" visible="true" StackPane.alignment="CENTER" text="TEST***************" translateX="0" translateY="0" styleClass="description-text"/>
+        </ScrollPane>
+    </StackPane>
+    <Label fx:id="walletDisplay" StackPane.alignment="TOP_CENTER"/>
+
+
+</StackPane>

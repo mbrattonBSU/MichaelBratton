@@ -1,0 +1,20 @@
+Known Issues:
+
+
+
+Notes:
+
+-The old singleton way of handling GameData is no more. According to StackOverflow,
+globals are a very bad thing and I should feel bad for using them. I'm not overly
+fond of the need to pass in the GameManager object for the BattleLogic and
+BattleController to function, but it's the best alternative I could find.
+
+
+To-Do's:
+
+-Ravioli Ravioli give me the (attack) formuoli
+
+
+
+
+

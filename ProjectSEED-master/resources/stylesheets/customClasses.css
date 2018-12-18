@@ -1,0 +1,114 @@
+@font-face {
+    src: url("/fonts/Exo-Light.otf");
+}
+
+@font-face{
+    src: url("/fonts/underwhe.ttf");
+}
+
+/* Battle Styles */
+.infoBox{
+    -fx-background-color: #4286f4;
+}
+.healthBar > .track{
+    -fx-background-color: #77f442;
+     -fx-background-color: transparent;
+      -fx-text-box-border: transparent;
+      -fx-control-inner-background: transparent;
+      -fx-background-radius: 0, 0, 0;
+      -fx-background-insets: 0, 0 0 0 0, 0 0 0 0;
+}
+
+.green-bar{
+    -fx-accent:#77f442;
+}
+
+.yellow-bar{
+    -fx-accent:#f4e842;
+}
+
+.red-bar{
+    -fx-accent:#f44242;
+}
+
+.tp-bar{
+    -fx-accent:#427af4;
+}
+
+.black-text{
+    -fx-color:#ffffff;
+}
+
+
+
+/* Overworld Styles */
+
+
+.party-box{
+    -fx-background-color:"black";
+}
+
+.white-box{
+    -fx-background-color:"white";
+}
+
+.description-box{
+    -fx-background-color:"black";
+}
+
+.description-text{
+    -fx-text-fill: white;
+    -fx-font-family: "Exo";
+    -fx-font-size: 14pt;
+}
+
+.damage-text{
+    -fx-text-fill: blue;
+    -fx-font-family: "Underwhelmed BRK";
+    -fx-font-size: 20pt;
+
+}
+
+
+.banner-text{
+    -fx-text-fill: white;
+    -fx-font-family: "Underwhelmed BRK";
+    -fx-font-size: 22pt;
+
+}
+
+.menu-text{
+    -fx-text-fill: white;
+    -fx-font-family: "Underwhelmed BRK";
+    -fx-font-size: 25pt;
+
+}
+
+.map{
+
+    -fx-background-color:#454e5b;
+
+
+}
+
+.side-bar{
+
+    -fx-background-image: url("/images/system/system_sidebar.png");
+
+}
+
+.save-box{
+    -fx-background-color:"black";
+}
+
+.item-area{
+    -fx-background-color:"grey";
+}
+
+.menu-box{
+    -fx-background-color:#424447;
+}
+
+.events-listing{
+
+}

@@ -1,0 +1,29 @@
+@font-face {
+    src: url("/fonts/Glametrix.otf");
+}
+.background{
+    -fx-background-color: "Black";
+    -fx-background-image: url("../../../../resources/Icons/blurredbarnbackground.jpg");
+}
+.title-background{
+    -fx-background-image: url("../../../../resources/Icons/titlebackground.png");
+    -fx-background-position: center;
+    -fx-background-size: 650 115;
+    -fx-background-repeat: no-repeat;
+}
+.selection-background{
+    -fx-background-image: url("../../../../resources/Icons/buttonbackground.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.title-text{
+    -fx-font-family: "Glametrix";
+    -fx-text-fill: "yellow";
+    -fx-font-size: 40pt;
+}
+.trail-description-text{
+    -fx-font-family: "Glametrix";
+    -fx-text-fill: "yellow";
+    -fx-font-size: 26pt;
+}
+

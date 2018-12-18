@@ -1,0 +1,127 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.ProgressIndicator?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+
+<?import javafx.scene.layout.AnchorPane?>
+<Group fx:controller="edu.bsu.cs222.FPBreetlison.Controller.BattleController" xmlns:fx="http://javafx.com/fxml" stylesheets="/stylesheets/customClasses.css">
+    <StackPane minWidth="900" minHeight="600">
+        <Pane fx:id="loaderScreen" maxWidth="900" maxHeight="600">
+            <ProgressIndicator fx:id="loader" layoutX="420" layoutY="275"/>
+        </Pane>
+
+        <StackPane fx:id="battleDisplay" visible="false" maxHeight="600" maxWidth="900">
+            <StackPane fx:id="backgrounds">
+            </StackPane>
+            <StackPane fx:id="viewWindow" maxWidth="800" StackPane.alignment="CENTER_RIGHT">
+                <HBox fx:id="heroGraphicsArea" StackPane.alignment="BOTTOM_LEFT" spacing="-20" scaleX=".75" scaleY=".75" alignment="BOTTOM_LEFT" translateY="-105" maxWidth="400" minWidth="400" maxHeight="300"/>
+
+            </StackPane>
+
+            <ScrollPane fx:id="historyScroller" pickOnBounds="false" visible="false" maxWidth="300" hbarPolicy="NEVER" >
+                <Label fx:id="historyDisplay" wrapText="true" maxWidth="295"/>
+            </ScrollPane>
+
+            <StackPane fx:id="mainSelectorArea" pickOnBounds="false" stylesheets="/stylesheets/pane.css">
+                <ImageView fx:id="backButton" StackPane.alignment="TOP_LEFT" translateX="-70" fitHeight="37" fitWidth="150"/>
+                <Pane fx:id="selectorBackground" maxWidth="125" maxHeight="600" StackPane.alignment="CENTER_LEFT" stylesheets="/stylesheets/pane.css" styleClass="pane"/>
+                <ScrollPane fx:id="selectorMenu" maxHeight="375" fitToHeight="true" prefViewportHeight="200" vbarPolicy="NEVER" maxWidth="125" stylesheets="/stylesheets/scrollpane.css" styleClass="edge-to-edge" StackPane.alignment="TOP_LEFT">
+                    <content>
+                        <StackPane fx:id="selectorHolder">
+                            <VBox fx:id="itemSelectorArea" visible="false" prefHeight="600" spacing="40" translateX="30" translateY="15">
+                                <children>
+
+                                </children>
+                            </VBox>
+                            <VBox fx:id="heroSelectorArea" translateX="45" prefHeight="600" translateY="15" spacing="40">
+                                <children>
+
+                                </children>
+                            </VBox>
+                            <VBox fx:id="skillSelectorArea" visible="false" translateX="45" prefHeight="600" translateY="15" spacing="40">
+                                <children>
+
+                                </children>
+                            </VBox>
+
+                            <VBox fx:id="actionMenu" visible="false" prefHeight="400" translateX="30" translateY="10" spacing="40">
+
+                                <Label fx:id="attack" maxWidth="40" minWidth="40" text="Attack" scaleX="2.2" scaleY="2.2" onMousePressed="#selectAttack" textFill="white"/>
+                                <Label fx:id="skills" maxWidth="40" minWidth="40" text="Skills" scaleX="2.2" scaleY="2.2" onMousePressed="#selectSkills" textFill="white"/>
+                                <Label fx:id="bag" maxWidth="40" minWidth="40" text="Items" scaleX="2.2" scaleY="2.2" onMousePressed="#selectBag" textFill="white"/>
+                                <Label fx:id="flee" maxWidth="40" minWidth="40" text="Flee" scaleX="2.2" scaleY="2.2" onMousePressed="#selectFlee" textFill="white"/>
+                                <Label fx:id="endTurn" maxWidth="40" minWidth="40" text="End Turn" scaleX="2.2" scaleY="2.2" onMousePressed="#selectEndTurn" textFill="white"/>
+
+                            </VBox>
+                        </StackPane>
+
+                    </content>
+                </ScrollPane>
+
+
+
+            </StackPane>
+            <HBox fx:id="enemySelectorArea" pickOnBounds="false" spacing="40"  translateX="240"  maxWidth="400" maxHeight="400" scaleX=".85" scaleY=".85">
+                <children>
+
+                </children>
+
+            </HBox>
+
+
+            <ScrollPane fx:id="textBox" pickOnBounds="false" stylesheets="/stylesheets/textBox.css" styleClass="edge-to-edge" maxHeight="150" maxWidth="650" StackPane.alignment="BOTTOM_LEFT">
+                <Label fx:id="mainDisplay" wrapText="true" scaleX="2" scaleY="2"  translateX="165" translateY="10" maxWidth="300" minWidth="300" maxHeight="40" minHeight="40" />
+            </ScrollPane>
+            <Pane fx:id="infoBox" pickOnBounds="false" styleClass="infoBox" maxHeight="150" maxWidth="250" StackPane.alignment="BOTTOM_RIGHT">
+                <Group fx:id="itemInfoDisplay" translateX="5" translateY="5">
+                    <ImageView fx:id="itemIGraphic"/>
+                    <Label fx:id="itemQuickSummary" wrapText="true" translateX="80" translateY="20" maxWidth="85" minWidth="85"/>
+                    <Label fx:id="itemInfoText" wrapText="true" translateY="55" maxWidth="200" maxHeight="90"/>
+
+                </Group>
+                <Group fx:id="battlerInfoDisplay" translateX="5" translateY="5">
+                    <ImageView fx:id="battlerGraphic"/>
+                    <Label fx:id="nameDisplay" translateX="90" translateY="20"/>
+                    <Label fx:id="lvlDisplay" translateX="200" translateY="20"/>
+                    <Label fx:id="hpDisplay" translateX="90" translateY="40"/>
+                </Group>
+                <Group fx:id="skillInfoDisplay" translateX="5" translateY="5">
+                    <ImageView fx:id="skillGraphic"/>
+                    <Label fx:id="skillQuickSummary" wrapText="true" translateX="80" translateY="20" maxWidth="85" minWidth="85"/>
+                    <Label fx:id="skillInfoText" wrapText="true" translateY="55" maxWidth="200" maxHeight="90"/>
+
+                </Group>
+
+            </Pane>
+
+            <ImageView fx:id="tpBarBackground" pickOnBounds="false" StackPane.alignment="TOP_RIGHT" fitHeight="75" fitWidth="375" translateX="5" translateY="-5">
+                <Image url="/images/system/UI_TP.png"/>
+            </ImageView>
+            <ProgressBar fx:id="tpBar" pickOnBounds="false" StackPane.alignment="TOP_RIGHT" styleClass="tp-bar" translateX="44" translateY="10" rotate="180" maxWidth="325" maxHeight="50" stylesheets="/stylesheets/tpBar.css" />
+            <Label fx:id="tpDisplay" pickOnBounds="false" text="10/10" StackPane.alignment="TOP_RIGHT" maxWidth="50" minWidth="50" scaleX="2" scaleY="2" translateX="-130" translateY="30" opacity=".50" />
+            <HBox fx:id="backgroundImage" pickOnBounds="false" GridPane.columnIndex="20" GridPane.rowIndex="20">
+            </HBox>
+        </StackPane>
+    </StackPane>
+    <Group fx:id="damageDisplayArea"/>
+    <Label fx:id="damageDisplay" styleClass="damage-text" visible="false" text="TEST"/>
+
+</Group>
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+<GameInfo>
+    <BattleInfo>
+        <CharacterBattleInfo>
+            <!--To be added later
+            <chara name="Prota" maxHP="30" attack="7" defense="5" enAttack="2" enDefense="5" agility="7" tpCost="3" battlerGraphicPath="/images/Bulba_Pepe.png"/>
+            -->
+            <hero name="Roxy" maxHP="20" attack="7" defense="7" enAttack="6" enDefense="9" agility="6" tpCost="2" expModifier="2.40" battlerGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Roxy.png" miniGraphicPath="images/battleGraphics/miniBattlerGraphics/Battle_Mini_Roxy.png" sizeX="150" sizeY="210" rewardAmt="30000"/>
+            <heroSkill starter="Sniffle,Spring-Kick,Sharpen" learn="2/Shock Pulse"/>
+            <hero name="Smitty" maxHP="45" attack="12" defense="9" enAttack="1" enDefense="4" agility="3" tpCost="5" expModifier="2.65" battlerGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Smitty.png" miniGraphicPath="images/battleGraphics/miniBattlerGraphics/Battle_Mini_Smitty.png" sizeX="390" sizeY="290" rewardAmt="45000"/>
+            <heroSkill starter="Steel Crusher,Glare"/>
+            <hero name="Blake" maxHP="35" attack="10" defense="5" enAttack="1" enDefense="4" agility="5" tpCost="4" expModifier="2.65" battlerGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Blake.png" miniGraphicPath="images/battleGraphics/miniBattlerGraphics/Battle_Mini_Blake.png" sizeX="200" sizeY="330" rewardAmt="45000"/>
+            <heroSkill starter="Volt Jab,Icy Hook,Fiery Uppercut"/>
+
+        </CharacterBattleInfo>
+        <CharacterBattleStrings>
+            <ProtaBattleString string="You fire a quick shot at the enemy. It grazes them."/>
+            <ProtaBattleString string="You take a second to aim at the enemy. You fire. The shot connects."/>
+            <RoxyBattleString string="Roxy springs forward, kicks the enemy in the gut, and bounces back."/>
+            <RoxyBattleString string="Roxy bounces high into the air. Her metal heels come crashing down on the enemy's head."/>
+            <RoxyBattleString string="Roxy pushes her palm to the enemy's chest and looses an electric shock."/>
+            <SmittyBattleString string="Smitty quickly sweeps under the enemy with his hammer. They trip and fall."/>
+            <SmittyBattleString string="Smitty clips the ground with his hammer, flinging a light field of rubble at the enemy."/>
+            <SmittyBattleString string ="Smitty slams the ground, causing a fissure to open up under the enemy."/>
+        </CharacterBattleStrings>
+
+        <EnemyBattleInfo>
+            <enemy name="Jag" maxHP="20" attack="15" defense="8" enAttack="6" enDefense="9" agility="12" tpCost="2" expModifier="2.50" weakness="metal" strength="frost"  battlerGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Jag.png" miniGraphicPath="images/battleGraphics/miniBattlerGraphics/Battle_Mini_Jag.png" sizeX="150" sizeY="100" rewardAmt="300"/>
+            <enemySkill starter="Sharpen"/>
+            <enemy name="Harshmallow" maxHP="20" attack="5" defense="4" enAttack="6" enDefense="9" agility="12" tpCost="2" expModifier="2.20" weakness="frost" strength="pyre"  battlerGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Harshmallow.png" miniGraphicPath="images/battleGraphics/miniBattlerGraphics/Battle_Mini_Harshmallow.png" sizeX="75" sizeY="75" rewardAmt="200"/>
+            <enemySkill starter="Sniffle"/>
+            <enemy name="Eaflay" maxHP="20" attack="5" defense="4" enAttack="6" enDefense="9" agility="12" tpCost="2" expModifier="2.20" weakness="pyre" strength="volt"  battlerGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Eaflay.png" miniGraphicPath="images/battleGraphics/miniBattlerGraphics/Battle_Mini_Eaflay.png" sizeX="125" sizeY="125" rewardAmt="250"/>
+            <enemySkill starter="Sniffle"/>
+            <enemy name="Oculith" maxHP="20" attack="5" defense="15" enAttack="6" enDefense="9" agility="12" tpCost="2" expModifier="2.20" weakness="hydro" strength="pyre"  battlerGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Oculith.png" miniGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Oculith.png" sizeX="75" sizeY="75" rewardAmt="350"/>
+            <enemySkill starter="Sniffle"/>
+            <enemy name="Skraw" maxHP="20" attack="5" defense="4" enAttack="6" enDefense="9" agility="12" tpCost="2" expModifier="2.20" weakness="volt" strength="metal"  battlerGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Skraw.png" miniGraphicPath="/images/battleGraphics/miniBattlerGraphics/Battle_Mini_Skraw.png" sizeX="125" sizeY="125" rewardAmt="1000"/>
+            <enemySkill starter="Sniffle"/>
+            <enemy name="Blisterbulb" maxHP="20" attack="5" defense="4" enAttack="6" enDefense="9" agility="12" tpCost="2" expModifier="2.20" weakness="pyre" strength="volt"  battlerGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Blisterbulb.png" miniGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Blisterbulb.png" sizeX="125" sizeY="125" rewardAmt="300"/>
+            <enemySkill starter="Acid Bath,Ensnare"/>
+            <enemy name="Apparacean" maxHP="20" attack="5" defense="4" enAttack="6" enDefense="9" agility="12" tpCost="2" expModifier="2.20" weakness="volt" strength="frost"  battlerGraphicPath="/images/battleGraphics/fullBattlerGraphics/Battle_Full_Apparacean.png" miniGraphicPath="/images/battleGraphics/miniBattlerGraphics/Battle_Mini_Apparacean.png" sizeX="125" sizeY="125" rewardAmt="400"/>
+            <enemySkill starter="Acid Bath,Ensnare"/>
+
+
+
+
+        </EnemyBattleInfo>
+        <Skills>
+            <Skill name="Sniffle" affectAmt="1" tpCost= "4" element="neutral" type="debuff" type2="attack" quickInfo="Enemy Attack Down" extraMessage="The enemy's attack was lowered!" animType="heroQuickStretch"/>
+            <Skill name="Sharpen" affectAmt="2" tpCost= "3" element="metal" type="buff" type2="none" quickInfo="User Attack Up" extraMessage="The user's attack increased!" animType="heroQuickStretch"/>
+            <Skill name="Steel Crusher" affectAmt="6" tpCost= "8" element="metal" type="attack" type2="null" quickInfo="Heavy Steel Damage" extraMessage="null" animType="heroLunge"/>
+            <Skill name="Spring-Kick" affectAmt="5" tpCost= "4" element="impact" type="attack" type2="null" quickInfo="Medium Impact Damage" extraMessage="null" animType="heroLunge"/>
+            <Skill name="ElectroPulse" affectAmt="1" tpCost= "3" element="volt" type="attack" type2="debuff" quickInfo="Light Volt Damage" extraMessage="null" animType="heroLunge"/>
+            <Skill name="Sweep-Kick" affectAmt="8" tpCost= "4" element="impact" type="attack" type2="null" quickInfo="Light Impact Damage" extraMessage="null" animType="heroLunge"/>
+            <Skill name="Rock Shower" affectAmt="8" tpCost= "4" element="stone" type="attack" type2="null" quickInfo="Light Impact Damage" extraMessage="null" animType="heroLunge"/>
+            <Skill name="Analyze" affectAmt="8" tpCost= "4" element="neutral" type="attack" type2="null" quickInfo="Light Impact Damage" extraMessage="null" animType="heroQuickStretch"/>
+            <Skill name="Glare" affectAmt="3" tpCost= "4" element="umbre" type="debuff" type2="attack" quickInfo="Enemy Attack Down" extraMessage="null" animType="heroQuickStretch"/>
+            <Skill name="Acid Bath" affectAmt="8" tpCost= "4" element="chem" type="attack" type2="null" quickInfo="Light Impact Damage" extraMessage="null" animType="heroLunge"/>
+            <Skill name="Frond Spear" affectAmt="8" tpCost= "4" element="chloro" type="attack" type2="null" quickInfo="Light Impact Damage" extraMessage="null" animType="heroLunge"/>
+            <Skill name="Ensnare" affectAmt="3" tpCost= "4" element="chloro" type="attack" type2="attack" quickInfo="Enemy Attack Down" extraMessage="null" animType="heroLunge"/>
+            <Skill name="Volt Jab" affectAmt="4" tpCost= "4" element="volt" type="attack" type2="attack" quickInfo="Medium Shock Damage" extraMessage="null" animType="heroLunge"/>
+            <Skill name="Icy Hook" affectAmt="4" tpCost= "4" element="frost" type="attack" type2="attack" quickInfo="Medium Frost Damage" extraMessage="null" animType="heroLunge"/>
+            <Skill name="Fiery Uppercut" affectAmt="4" tpCost= "4" element="pyre" type="attack" type2="attack" quickInfo="Medium Flame Damage" extraMessage="null" animType="heroLunge"/>
+
+        </Skills>
+
+
+    </BattleInfo>
+    <ItemInfo>
+        <item name="Patch" description="Integrates with the user's body to recover health." quickSummary="Recover 15 HP" buyPrice="5000" affectAmt="15" type="heal" type2="null" imagePath="/images/battleGraphics/itemGraphics/item_patch.png"/>
+        <item name="Overclock" description="A bizarre pocketwatch that creates a bubble of sped-up time around the user. Allows user to attack more quickly." quickSummary="+ 5 to max TP" buyPrice="10000" affectAmt="5" type="tpBuff" type2="" imagePath="/images/battleGraphics/itemGraphics/item_overclock.png"/>
+        <item name="Candy Bar" description="CHAWKLATE. Recovers health." quickSummary="Recover 10 HP" buyPrice="1000" affectAmt="10" type="heal" type2="null" imagePath="/images/battleGraphics/itemGraphics/item_pearpop.png"/>
+        <item name="PearPop" description="It's pear flavored AND pear shaped." quickSummary="Recover 10 HP" buyPrice="1250" affectAmt="10" type="heal" type2="null" imagePath="/images/battleGraphics/itemGraphics/item_pearpop.png"/>
+        <item name="Candy Sapphire" description="Naturally occurring crystallized sugar." quickSummary="Recover 20 HP" buyPrice="30000" affectAmt="20" type="heal" type2="null" imagePath="/images/battleGraphics/itemGraphics/item_bluraspsapphire.png"/>
+        <item name="Red Shroom" description="Usually eating a mushroom you found on the ground is a bad idea. " quickSummary="noodle" buyPrice="25000" affectAmt="50" type="heal" type2="null" imagePath="null"/>
+
+
+
+
+    </ItemInfo>
+    <OverWorldInfo>
+        <Islands>
+            <Sectors>
+                <Rooms>
+                    <room name="Colossal Plains" des="A sea of grass that goes on for miles. The way it swishes in the wind is hypnotizing. Upon further inspection you find a vending machine on its side. For whatever reason it's still functional." events="Buried Vending Machine/Battle" north="Luminous Caves" south="Forest Clearing" east="null" west="null" image="images/overworld_background_plains.png" battleImage="images/battleGraphics/backgrounds/battle_backgrounds_plainsday.png"/>
+                    <room name="Luminous Caves" des="A system of dark caves. The only light comes from the strange glowing crystals scattered throughout. You spy a shadowy figure behind a nearby waterfall." events="Shadowy Merch Dealer/Battle" north="null" south="Colossal Plains" east="null" west="null"  image="/images/overworld_background_caves.png" battleImage="/images/battleGraphics/backgrounds/battle_background_caves.png" />
+                    <room name="Forest Clearing" des="You can hear the cries of various types of creatures coming from the surrounding forest. A fire would be a good idea if you plan to stay past dark." events="Battle" north="Colossal Plains" south="null" east="Conchbreak Key" west="null" image="/images/overworld_background_forestclearing.png" battleImage="images/battleGraphics/backgrounds/battle_background_forestclearing.png"/>
+                    <room name="Conchbreak Key" des="A peaceful sand bar. Pieces of shattered shells glimmer just beneath the surface of the shallow pools. " events="Battle" north="null" south="null" east="null" west="Forest Clearing" image="/images/overworld_background_beach.png" battleImage="images/battleGraphics/backgrounds/battle_background_beachday.png"/>
+                </Rooms>
+            </Sectors>
+        </Islands>
+
+    </OverWorldInfo>
+    <Events>
+        <event name="Buried Vending Machine" type="shop" stock="PearPop" sell="false" cluster="" imagePath="/images/events/event_vendingmachine.png"/>
+        <event name="Shadowy Merch Dealer" type="shop" stock="Overclock/Patch/Candy Sapphire" sell="false" cluster="" imagePath="/images/events/event_shadymerchdealer.png"/>
+        <event name="Battle" type="battle" stock="Patch" sell="false" cluster="" imagePath="/images/events/event_battle.png"/>
+
+    </Events>
+</GameInfo>
+

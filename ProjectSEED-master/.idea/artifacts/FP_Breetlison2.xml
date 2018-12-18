@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="FP-Breetlison2">
+    <output-path>$PROJECT_DIR$/out/artifacts/FP_Breetlison2</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="edu.bsu.cs222.FPBreetlison.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="Project SEED" />
+        <option name="vendor" value="Pear Programming" />
+        <option name="version" value="v3" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="FP_Breetlison.jar">
+        <element id="module-output" name="FP-Breetlison" />
+      </element>
+    </root>
+  </artifact>
+</component>
